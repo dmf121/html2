@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+    /* font-family: 'Josefin Sans', sans-serif; */
+
+    /* font-family: 'Noto Sans', sans-serif; */
+
+
+    /* font-family: 'Ysabeau Office', sans-serif; */
+
+    font-family: 'Baloo 2', cursive;
+
+    
+    font-weight: 500;
+    font-size: large;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: rgb(113, 156, 248);
+}
+
+header {
+    position: relative;
+}
+
+.my-nav {
+    position: fixed !important;
+    width: 100%;
+}
+
+.nav-item {
+   
+    display: grid;
+    place-items: center;
+}
+
+
+
+.home {
+    height: 100vh;
+}
+
+.photo {
+    width: 300px;
+    height: 350px;
+    background: url(/cv/img/photo.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+    box-shadow: 1px 0px 20px 0px rgb(150, 150, 150);
+}
+
+
+
+.dark .photo {
+    box-shadow: 1px 0px 20px 0px rgb(223, 223, 223);
+}
+
+
+@keyframes animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 50% 60% 70% 70%/50% 60% 30% 60%;
+    }
+
+    100% {
+            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        }
+}
+
+.tech-stack {
+    white-space: nowrap;
+    text-align: end;
+}
+
+.stack {
+    display: flex;
+    justify-content: left;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .tech-stack {
+        text-align: center;
+    }
+    .stack {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.stack img {
+    height: 100%;
+    margin-left: 10px;
+    transition: all .5s ease;
+    scale: 1;
+}
+
+.stack img:nth-child(3) {
+    scale: 1.08;
+}
+
+.stack img:hover {
+    cursor: inherit;
+    transform: scale(1.2);
+    
+}
+
+
+.title {
+    color: rgb(252, 116, 5);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.about-picture {
+    padding: 30px;
+}
+
+.about-picture img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+.projects {
+    height: auto;
+    padding: 0 10px;
+    margin-top: 40px;
+}
+
+.demo-picture {
+    max-width: 95%;
+  
+    
+}
+
+.made {
+    font-weight: 800;
+}
+
+
+
+.demo-picture-5 {
+    background: url('/CV/img/demo_5.jpg');
+    background-size: cover;
+}
+
+.demo-picture-4 {
+    background: url('/CV/img/demo_4.jpg');
+}
+
+.demo-picture-3 {
+    background: url('/CV/img/demo_3.jpg');
+}
+
+.demo-picture-2 {
+    background: url('/CV/img/demo_2.jpg');
+}
+
+.demo-picture-1 {
+    background: url('/CV/img/demo_1.jpg');
+}
+
+.demo-picture-5, .demo-picture-4, .demo-picture-3, .demo-picture-2, .demo-picture-1 {
+    border-radius: 20px;
+    height: 315px;
+    background-size: cover !important;
+}
+
+
+
+
+
+.dark-btn {
+    padding: 0.5rem;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+@media (max-width: 992px) {
+    .dark-btn {
+        margin-inline: 20px;
+    }
+}
+
+.dark-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.darked-btn {
+    border: 1px solid white;
+}
+
+.darked-btn:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+
+
+.dark {
+    background-color: rgb(28, 28, 28) !important;
+    color: white !important;
+}
+
+
+.dark .git {
+    fill: white;
+}
+
+.dark .demo-link {
+    fill: white;
+}
+
+.social-phone svg, .social-facebook svg, .social-insta svg, .social-gmail svg {
+    transition: all 0.3s ease-in-out;
+    fill: black;
+}
+
+.social-phone:hover svg, .dark .social-phone:hover svg {
+    fill: rgb(0, 128, 47);
+}
+
+.social-facebook:hover svg, .dark .social-facebook:hover svg {
+    fill: #1977f3;
+}
+
+.social-insta:hover svg, .dark .social-insta:hover svg {
+    fill: #ea1b6c;
+}
+
+
+.social-gmail:hover svg, .dark .social-gmail:hover svg {
+    fill: #fd5040;
+}
+
+
+.dark .social-phone svg, .dark .social-facebook svg, .dark .social-insta svg, .dark .social-gmail svg {
+    fill: white;
+}
+
+
+.social-link {
+    width: 150px;
+}
+
+
+.social-link a:hover {
+    color: rgb(171, 171, 171);
+}
+
+
