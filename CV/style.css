@@ -192,24 +192,24 @@ header {
 
 
 .demo-picture-5 {
-    background: url('/CV/img/demo_5.jpg');
+    background: url('/img/demo_5.jpg');
     background-size: cover;
 }
 
 .demo-picture-4 {
-    background: url('/CV/img/demo_4.jpg');
+    background: url('/img/demo_4.jpg');
 }
 
 .demo-picture-3 {
-    background: url('/CV/img/demo_3.jpg');
+    background: url('/img/demo_3.jpg');
 }
 
 .demo-picture-2 {
-    background: url('/CV/img/demo_2.jpg');
+    background: url('/img/demo_2.jpg');
 }
 
 .demo-picture-1 {
-    background: url('/CV/img/demo_1.jpg');
+    background: url('/img/demo_1.jpg');
 }
 
 .demo-picture-5, .demo-picture-4, .demo-picture-3, .demo-picture-2, .demo-picture-1 {

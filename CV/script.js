@@ -35,11 +35,11 @@ for (let index = 1; index < gifs.length+1; index++) {
 
 gif.forEach((item, index) => {
     item.addEventListener('mouseenter', function() {
-        item.style.background = `url("/CV/img/demo_${index+1}_gif.gif") no-repeat 100% 100%`;
+        item.style.background = `url("/img/demo_${index+1}_gif.gif") no-repeat 100% 100%`;
     });
 
     item.addEventListener('mouseleave', function() {
-        item.style.background = `url("/CV/img/demo_${index+1}.jpg")`;
+        item.style.background = `url("/img/demo_${index+1}.jpg")`;
 })
 
 })
