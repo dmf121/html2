@@ -182,6 +182,7 @@ header {
 
 .demo-picture-6 {
     background: url('/img/demo_6.jpg');
+    background-size: cover;
 }
 
 .demo-picture-5 {
